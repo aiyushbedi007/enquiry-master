@@ -1,0 +1,290 @@
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+html{
+  min-height: 100%;
+}
+
+body {
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  background: #fafafa;
+  min-height: 100%;
+  max-width: 1200px;
+
+}
+
+p, h1, h2, h3, a, ul{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #222;
+}
+
+form{
+  padding: 20px;
+  width: 360px;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+
+form button, form h5{
+  margin: 20px 0;
+}
+
+form.search{
+  padding: 0px;
+}
+
+input{
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  width: 100%;
+}
+
+button{
+  margin: auto;
+  border-radius: 36px;
+  background: #FEE996;
+  border:0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+}
+header{
+  display: flex;
+  align-items: center;
+}
+header img{
+  width: 250px;
+  margin-right: 40px;
+}
+header h2{
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+header h3{
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  color: #999;
+}
+header .btn{
+  margin-top: 20px;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* nav & footer styles */
+footer{
+  color: #777;
+  text-align: center;
+  margin: 80px auto 20px;
+}
+h2{
+  margin-bottom: 40px;
+}
+h3{
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+nav h1 {
+  color: #f1356d;
+}
+nav .links {
+  margin-left: auto;
+}
+nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+nav a:hover {
+  color: #f1356d;
+  text-decoration:none;
+}
+.content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* enquiry previews / list */
+.enquiry-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.enquiry-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.enquiry-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.enquiry-preview a{
+  text-decoration: none;
+}
+
+/* enquiry details page */
+.enquiry-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.enquiry-details div {
+  margin: 20px 0;
+}
+.enquiry-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new enquiry form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn{
+  border-radius: 36px;
+  background: #FEE996;
+}
+
+/* index styles */
+.enquirys a:hover h3{
+  color: #dc143c;
+}
+
+/* details styles */
+.details{
+  position: relative;
+}
+
+.delete:hover, .edit:hover{
+  cursor: pointer;
+  box-shadow: 1px 2px 3px #00000033;
+}
+
+
+
+/* create styles */
+.create-enquiry form{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background: #ffffff;
+
+}
+.create-enquiry input,
+.create-enquiry textarea{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;    
+}
+.create-enquiry label{
+  display: block;
+  margin: 20px 0 10px;
+}
+textarea{
+  height: 120px;
+}
+.create-enquiry button{
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #dc143c;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+  border: 0;
+  font-weight: 700;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.error{
+  color: #ff0099;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label{
+  color: #ec407a !important;
+}
